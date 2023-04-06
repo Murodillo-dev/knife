@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Jura";
+  src: url("../../fonts/Jura/static/Jura-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
+.App {
+  max-width: 1440px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border: 1px solid red;
+}
+.App > .header {
+  position: relative;
+}
+.App > .header > .header_nav {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  height: auto;
+  padding: 18px 100px;
+  background: rgba(33, 33, 33, 0.8);
+  -webkit-backdrop-filter: blur(5.5px);
+          backdrop-filter: blur(5.5px);
+}
+.App > .header > .header_nav > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.App > .header > .header_nav > ul > .header_nav_left {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.App > .header > .header_nav > ul > .header_nav_left > li > a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.App > .header > .header_nav > ul > .header_nav_left > li > a > .menu {
+  background-color: red;
+  background-color: transparent;
+}
+.App > .header > .header_nav > ul > .header_nav_left > li > a > .menu > .offcanvas {
+  width: 300px;
+  height: 150px;
+  background-color: red;
+}
+.App > .header > .header_nav > ul > .header_nav_left > li > a > .fa-sharp {
+  color: white;
+  font-size: 17px;
+}
+.App > .header > .header_nav > ul > .header_nav_left > li:nth-child(2) {
+  margin: 0 25px;
+}
+.App > .header > .header_nav > ul > .header_nav_center {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.App > .header > .header_nav > ul > .header_nav_center > li > a {
+  text-decoration: none;
+}
+.App > .header > .header_nav > ul > .header_nav_center > li > a > p {
+  color: white;
+  font-size: 25px;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.App > .header > .header_nav > ul > .header_nav_center > li > a > p > font {
+  background-color: white;
+  color: black;
+}
+.App > .header > .header_nav > ul > .header_nav_right {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.App > .header > .header_nav > ul > .header_nav_right > li > a > .fa-solid {
+  color: white;
+  font-size: 17px;
+}
+.App > .header > .header_nav > ul > .header_nav_right > li:nth-child(2) {
+  margin: 0 25px;
+}
+.App > .header > .swiper {
+  width: 100%;
+  height: 600px;
+  border: 1px solid red;
+}
+.App > .header > .swiper > .swiper-wrapper > .swiper-slide {
+  background: url("../../images/img1.png") no-repeat center center/cover;
+}
+.App > .header > .swiper > .swiper-button-prev {
+  border: 1px solid #FFFFFF;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 190px;
+  margin-left: 100px;
+}
+.App > .header > .swiper > .swiper-button-prev > ::after {
+  display: none;
+}
+.App > .header > .swiper > .swiper-button-next {
+  border: 1px solid #FFFFFF;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 190px;
+  margin-right: 100px;
+}
+.App > .header > .header_info {
+  max-width: 550px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  margin-top: 150px;
+  margin-left: 190px;
+}
+.App > .header > .header_info > h1 {
+  font-family: "Jura";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 41px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+.App > .header > .header_info > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin-top: 25px;
+}
+.App > .header > .header_info > button {
+  width: 165px;
+  height: 55px;
+  border: 2px solid #C80000;
+  border-radius: 27px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 23px;
+  color: #FFFFFF;
+  background: transparent;
+  transition: all 0.75s;
+  margin-top: 40px;
+}
+.App > .header > .header_info > button:hover {
+  background-color: red;
+}
+.App > .body {
+  width: 100%;
+  height: auto;
+  background: #373737;
+  padding: 60px 120px;
+}
+.App > .body > .body_icons {
+  border: 1px solid red;
+  padding: 0 80px;
+}
+.App > .body > .body_icons > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.App > .body > .body_icons > ul > li {
+  text-align: center;
+  border: 1px solid red;
+}
+.App > .body > .body_icons > ul > li > a > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFFFFF;
+  opacity: 0.4;
+  margin-top: 25px;
+}
+.App > .body > .body_icons > ul > li:hover p {
+  color: #FF0000;
+}/*# sourceMappingURL=Style.css.map */

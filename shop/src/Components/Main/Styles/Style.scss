@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$border:1px solid red;
+@font-face {
+    font-family: 'Jura';
+    src: url('../../fonts/Jura/static/Jura-Regular.ttf');
+}
+@font-face {
+    font-family: 'Montserrat' ;
+    src: url('../../fonts/Montserrat/static/Montserrat-Regular.ttf');
+}
+@mixin start{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+@mixin beetwen{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@mixin center{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.App{
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border: $border;
+
+    &>.header{
+        position: relative;
+
+        &>.header_nav{
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            width: 100%;
+            height: auto;
+            padding: 18px 100px;
+            background: rgba(33, 33, 33, 0.8);
+            backdrop-filter: blur(5.5px);
+
+            &>ul{
+                list-style: none;
+                @include beetwen();
+                align-items: center;
+
+                &>.header_nav_left{
+                    @include start();
+
+                    &>li{
+
+                        &>a{
+                            text-decoration: none;
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 17px;
+                            line-height: 24px;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+
+                            &>.menu{
+                                background-color: red;
+                                background-color: transparent;
+
+                                &>.offcanvas{
+                                    width: 300px;
+                                    height: 150px;
+                                    background-color: red;
+                                }
+                            }
+
+                            &>.fa-sharp{
+                                color: white;
+                                font-size: 17px;
+                            }
+                        }
+
+                    }
+
+                    &>li:nth-child(2){
+                        margin: 0 25px
+                    }
+                }
+                &>.header_nav_center{
+                    @include start();
+                    &>li{
+                        &>a{
+                            text-decoration: none;
+
+                            &>p{
+                                color: white;
+                                font-size: 25px;
+                                font-family: 'Montserrat' ;
+                                font-weight: 700;
+                                &>font{
+                                    background-color: white;
+                                    color: black
+                                }
+                            }
+                        }
+                    }
+                }
+                &>.header_nav_right{
+                    @include start();
+
+                    &>li{
+                        &>a{
+                            &>.fa-solid{
+                                color: white;
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                    &>li:nth-child(2){
+                        margin: 0 25px;
+                    }
+                }
+            }
+        }
+
+        &>.swiper{
+            width: 100%;
+            height: 600px;
+            border: $border;
+            
+            &>.swiper-wrapper{
+                &>.swiper-slide{
+                    background: url('../../images/img1.png' ) no-repeat center center / cover;
+                }
+            }
+
+            &>.swiper-button-prev{
+                border: 1px solid #FFFFFF;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-top: 190px;
+                margin-left: 100px;
+
+                &>::after{
+                    display: none;
+                }
+            }
+            &>.swiper-button-next{
+                border: 1px solid #FFFFFF;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-top: 190px;
+                margin-right: 100px;
+            }
+        }
+
+        &>.header_info{
+            max-width: 550px;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            margin-top: 150px;
+            margin-left: 190px;
+
+            &>h1{
+                font-family: 'Jura';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 41px;
+                line-height: 48px;
+                color: #FFFFFF;
+            }
+
+            &>p{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 23px;
+                color: #FFFFFF;
+                margin-top: 25px;
+            }
+
+            &>button{
+                width: 165px;
+                height: 55px;
+                border: 2px solid #C80000;
+                border-radius: 27px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 23px;
+                color: #FFFFFF;
+                background: transparent;
+                transition: all 0.75s;
+                margin-top: 40px;
+            }
+            &>button:hover{
+                background-color: red;
+            }
+        }
+    }
+
+    &>.body{
+        width: 100%;
+        height: auto;
+        background: #373737;
+        padding: 60px 120px;
+
+        &>.body_icons{
+            border: $border;
+            padding: 0 80px;
+
+            &>ul{
+                list-style: none;
+                @include beetwen();
+
+                &>li{
+                    text-align: center;
+                    border: $border;
+
+                    &>a{
+
+                        &>p{
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 17px;
+                            line-height: 21px;
+                            color: #FFFFFF;
+                            opacity: 0.4;
+                            margin-top: 25px;
+                        }
+                    }
+                }
+
+                &>li:hover p{
+                    color: #FF0000;
+                }
+            }
+        }
+    }
+}
