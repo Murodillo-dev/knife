@@ -129,8 +129,6 @@
   margin-right: 100px;
 }
 .App > .header > .header_info {
-  max-width: 550px;
-  width: 100%;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -138,6 +136,8 @@
   margin-left: 190px;
 }
 .App > .header > .header_info > h1 {
+  max-width: 550px;
+  width: 100%;
   font-family: "Jura";
   font-style: normal;
   font-weight: 400;
@@ -146,6 +146,8 @@
   color: #FFFFFF;
 }
 .App > .header > .header_info > p {
+  max-width: 550px;
+  width: 100%;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -204,4 +206,223 @@
 }
 .App > .body > .body_icons > ul > li:hover p {
   color: #FF0000;
+}
+.App > .body > .body_knife {
+  margin-top: 65px;
+}
+.App > .body > .body_knife > .body_knife_cards {
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.App > .body > .body_knife > .body_knife_cards > .body_knife_cards_img {
+  padding: 25px 28px;
+  margin-top: 25px;
+  max-width: 590px;
+  width: 100%;
+  height: 481px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  border-radius: 15px;
+  background: url("../../images/img2.png") no-repeat center center/cover;
+}
+.App > .body > .body_knife > .body_knife_cards > .body_knife_cards_img > a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.App > .body > .body_knife > .body_knife_cards > .body_knife_cards_img > .fa-arrow-right-long {
+  color: white;
+  margin-bottom: 5px;
+}
+.App > .body > .body_knife > .body_knife_cards > .body_knife_cards_block {
+  width: 286px;
+  height: 480px;
+  border: 1px solid red;
+  margin-top: 25px;
+}
+.App > .body > .body_knife > .body_knife_cards > .body_knife_cards_block > .block_image {
+  width: 100%;
+  height: 412px;
+  background-color: #272727;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+.App > .body > .body_knife > .body_knife_cards > .body_knife_cards_block > .block_image > .circle {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  width: 37px;
+  height: 37px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 50%;
+  transition: 0.75s;
+}
+.App > .body > .body_knife > .body_knife_cards > .body_knife_cards_block > .block_image > .circle > .fa-plus {
+  align-self: center;
+  color: white;
+  font-size: 35px;
+  margin-top: -10px;
+}
+.App > .body > .body_knife > .body_knife_cards > .body_knife_cards_block > .block_image:hover > .circle {
+  background-color: red;
+}
+.App > .body > .body_knife > .body_knife_cards > .body_knife_cards_block > h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-top: 12px;
+}
+.App > .body > .body_knife > .body_knife_cards > .body_knife_cards_block > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+.App > .body > .body_knife > .body_knife_cards > .body_knife_cards_block > p > font {
+  color: #ff0000;
+  margin-left: 30px;
+}
+.App > .body > .body_knife > .body_knife_cards > .instagram {
+  width: 286px;
+  height: 412px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 30px 0 107px;
+  background: url("../../images/img5.png") no-repeat center center/cover;
+}
+.App > .body > .body_knife > .body_knife_cards > .instagram > .fa-instagram {
+  color: white;
+  font-size: 30px;
+}
+.App > .body > .body_knife > .body_knife_cards > .instagram > p {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  color: white;
+}
+.App > .body > .email {
+  border: 1px solid red;
+  margin-top: 50px;
+}
+.App > .body > .email > .email_info {
+  text-align: center;
+}
+.App > .body > .email > .email_info > p {
+  font-family: "Jura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+.App > .body > .email > .email_info > input {
+  width: 276px;
+  height: 59px;
+  background: #272727;
+  border-radius: 6px;
+  border: none;
+  padding: 20px 26px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  opacity: 0.5;
+  margin-top: 15px;
+  outline: none;
+}
+.App > .body > .email > .email_block {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+.App > .body > .email > .email_block > .email_block_cards {
+  width: 286px;
+  height: 480px;
+  border: 1px solid red;
+  margin-top: 25px;
+}
+.App > .body > .email > .email_block > .email_block_cards > .block_image {
+  width: 100%;
+  height: 412px;
+  background-color: #272727;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+.App > .body > .email > .email_block > .email_block_cards > .block_image > .circle {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  width: 37px;
+  height: 37px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 50%;
+  transition: 0.75s;
+}
+.App > .body > .email > .email_block > .email_block_cards > .block_image > .circle > .fa-plus {
+  align-self: center;
+  color: white;
+  font-size: 35px;
+  margin-top: -10px;
+}
+.App > .body > .email > .email_block > .email_block_cards > .block_image:hover > .circle {
+  background-color: red;
+}
+.App > .body > .email > .email_block > .email_block_cards > h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-top: 12px;
+}
+.App > .body > .email > .email_block > .email_block_cards > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+.App > .body > .email > .email_block > .email_block_cards > p > font {
+  color: #ff0000;
+  margin-left: 30px;
 }/*# sourceMappingURL=Style.css.map */
