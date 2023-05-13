@@ -1,14 +1,19 @@
 import React from 'react'
+import '../Styles/Style.css'
 
 const Item = (props) => {
   return (
     <div className='item'>
-        <div className="item_img">
-        <img src={props.img}/>
-        </div>
+      <div className="item_data">
+      <p>
+        {props.data}
+      </p>
+      </div>
+        <div className="item_info">
         <h1>
-            {props.name}
+            {props.info}
         </h1>
+        </div>
     </div>
   )
 }

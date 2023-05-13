@@ -1,10 +1,11 @@
 import '../Styles/Style.css'
+import '../Styles/Responsive.css'
 import React, { useRef, useState, Component } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import {Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
@@ -21,23 +22,89 @@ const Header = () => {
         <ul>
           <div className="header_nav_left">
             <li>
-              <a href="#">
-              <i class="fa-sharp fa-solid fa-braille"></i>
-                {/* <div className="menu">
-                  <Button variant="primary" onClick={handleShow}>
-                    <i class="fa-sharp fa-solid fa-braille"></i>
-                  </Button>
+              <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <i class="fa-sharp fa-solid fa-braille"></i>
 
-                  <Offcanvas show={show} onHide={handleClose}>
-                    <Offcanvas.Header closeButton>
-                      <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-                    </Offcanvas.Header>
-                    <Offcanvas.Body>
-                      Some text as placeholder. In real life you can have the elements you
-                      have chosen. Like, text, images, lists, etc.
-                    </Offcanvas.Body>
-                  </Offcanvas>
-                </div> */}
+                <div className="menu">
+
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExample">
+                    <div class="offcanvas-header">
+                    <i class="fa-sharp fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul>
+                          <li>
+                            <a href="#">
+                            Кухонные ножи TUOTOWN 
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                            Складные ножи TUOTOWN 
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                            Кухонные ножи QXF
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                            Точильные камни
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                            Наборы для BBQ
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                            Кухонные принадлежности
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                            Туристические товары
+                            </a>
+                          </li>
+                        </ul>
+                        
+                        <ul className='nav2'>
+                          <li>
+                            <a href="#">
+                            Новости
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                            О компании
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                            Контакты
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                            Как проехать
+                            </a>
+                          </li>
+                        </ul>
+                    </div>
+                  </div>
+
+                </div>
 
               </a>
             </li>
@@ -48,9 +115,14 @@ const Header = () => {
               </a>
             </li>
 
-            <li>
+            <li className='number'>
               <a href="#">
-                8 981 120-11-17
+              8 981 120-11-17
+              </a>
+            </li>
+            <li className='phone'>
+              <a href="#">
+              <i class="fa-solid fa-phone"></i>
               </a>
             </li>
           </div>
@@ -99,7 +171,7 @@ const Header = () => {
           disableOnInteraction: false,
         }}
         navigation={true}
-        modules={[Autoplay,Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide></SwiperSlide>
@@ -119,6 +191,21 @@ const Header = () => {
           ПОДРОБНЕЕ
         </button>
       </div>
+
+      {/* <Button variant="primary" onClick={handleShow}>
+                    <i class="fa-sharp fa-solid fa-braille"></i>
+                  </Button>
+
+                  <Offcanvas show={show} onHide={handleClose}>
+                    <Offcanvas.Header closeButton>
+                      <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                    </Offcanvas.Header>
+                    <Offcanvas.Body>
+                      Some text as placeholder. In real life you can have the elements you
+                      have chosen. Like, text, images, lists, etc.
+                    </Offcanvas.Body>
+                  </Offcanvas> */}
+
 
     </div>
   )
