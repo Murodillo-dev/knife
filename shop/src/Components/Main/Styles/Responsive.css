@@ -405,4 +405,409 @@
   .App > .footer > .footer_nav > .footer_nav_right {
     padding-right: 100px;
   }
+}
+@media screen and (max-width: 400px) {
+  .App {
+    max-width: 400px;
+    width: 100%;
+  }
+  .App > .header > .header_nav {
+    padding: 12px 15px;
+  }
+  .App > .header > .header_nav > ul > .header_nav_left > .location {
+    display: none;
+  }
+  .App > .header > .header_nav > ul > .header_nav_left > .bag {
+    display: block;
+    margin: 0 25px;
+  }
+  .App > .header > .header_nav > ul > .header_nav_left > li > a > .menu > .offcanvas {
+    padding: 0 0 0 25px;
+    max-width: 400px;
+    width: 100%;
+  }
+  .App > .header > .header_nav > ul > .header_nav_left > li > a > .menu > .offcanvas > .offcanvas-header {
+    padding: 35px 25px 25px 0;
+  }
+  .App > .header > .header_nav > ul > .header_nav_left > li > a > .menu > .offcanvas > .offcanvas-header > .right {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .App > .header > .header_nav > ul > .header_nav_left > li > a > .menu > .offcanvas > .offcanvas-header > .right > .mobile {
+    display: block;
+    margin-left: 35px;
+  }
+  .App > .header > .header_nav > ul > .header_nav_left > li > a > .menu > .offcanvas > .offcanvas-body > ul > li > a {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .App > .header > .header_nav > ul > .header_nav_center > li > a > p {
+    font-size: 20px;
+  }
+  .App > .header > .header_nav > ul > .header_nav_right {
+    display: none;
+  }
+  .App > .header > .header_info {
+    margin-top: 52px;
+    padding: 15px;
+  }
+  .App > .header > .header_info > h1 {
+    max-width: 290px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .App > .header > .header_info > p {
+    max-width: 215px;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .App > .header > .header_info > button {
+    margin-top: 10px;
+  }
+  .App > .body {
+    background: #272727;
+  }
+  .App > .body > .body_icons {
+    display: none;
+  }
+  .App > .body > .body_knife {
+    display: none;
+  }
+  .App > .body > .email {
+    display: none;
+  }
+  .App > .body > .new {
+    display: none;
+  }
+  .App > .body > .town {
+    display: none;
+  }
+  .App > .body > .all {
+    display: none;
+  }
+  .App > .body > .item {
+    display: none;
+  }
+  .App > .body > .phone {
+    display: block;
+    padding: 0 15px;
+    background: #272727;
+  }
+  .App > .body > .phone > .phone_knife {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .App > .body > .phone > .phone_knife > .phone_knife_top {
+    max-width: 290px;
+    width: 100%;
+    height: 290px;
+    background: url("../../images/320px1.png") no-repeat center center/cover;
+  }
+  .App > .body > .phone > .phone_knife > h1 {
+    max-width: 290px;
+    width: 100%;
+    font-family: "Jura";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-top: 20px;
+  }
+  .App > .body > .phone > .phone_knife > p {
+    max-width: 290px;
+    width: 100%;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+  }
+  .App > .body > .phone > .phone_knife > .phone_knife_top:nth-child(4) {
+    margin-top: 70px;
+    background: url("../../images/320px2.png") no-repeat center center/cover;
+  }
+  .App > .body > .phone > .phone_slide {
+    padding: 35px 0;
+    background: #272727;
+  }
+  .App > .body > .phone > .phone_slide > .swiper > .swiper-wrapper > .swiper-slide {
+    width: 100%;
+    height: 165px;
+    background-color: red;
+    border-radius: 15px;
+    background: url("../../images/320px3.png") no-repeat center center/cover;
+  }
+  .App > .body > .phone > .phone_slide > .phone_video {
+    margin-top: 30px;
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+  }
+  .App > .body > .phone > .phone_slide > .phone_video > .mp4 {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .App > .body > .phone > .phone_slide > .phone_video > button > .fa-circle-play {
+    font-size: 50px;
+    color: red;
+    position: absolute;
+    z-index: 2;
+    top: 60px;
+    left: 160px;
+  }
+  .App > .body > .phone > .phone_info {
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .App > .body > .phone > .phone_info > h1 {
+    font-family: "Jura";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .App > .body > .phone > .phone_info > h1:hover {
+    border-bottom: 2px solid red;
+  }
+  .App > .body > .phone > .phone_info > .phone_info_img {
+    border-radius: 15px;
+    margin-top: 30px;
+    width: 250px;
+    height: 350px;
+    margin-bottom: 15px;
+    background: url("../../images/320px5.png") no-repeat center center/cover;
+  }
+  .App > .body > .phone > .phone_info > .phone_info_props {
+    border-bottom: 1px solid #4F4F4F;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+  .App > .body > .phone > .phone_info > .phone_info_props > p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+  .App > .body > .phone > .phone_info > .phone_info_props2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: center;
+  }
+  .App > .body > .phone > .phone_info > .phone_info_props2 > button {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 35px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #ADACAC;
+    background-color: transparent;
+    border: none;
+  }
+  .App > .body > .phone > .phone_info > .phone_info_props2 > h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #ADACAC;
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+  .App > .body > .acces {
+    background: #373737;
+    padding: 60px 15px 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .App > .body > .acces > .acces_info {
+    width: 100%;
+  }
+  .App > .body > .acces > .acces_info > h3 {
+    width: 133px;
+    font-family: "Jura";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin: 0;
+    border-bottom: 2px solid red;
+  }
+  .App > .body > .acces > .item2 {
+    width: 140px;
+    height: 190px;
+    border-radius: 15px;
+    padding: 15px 10px;
+    position: relative;
+    margin-top: 30px;
+    background: #272727;
+  }
+  .App > .body > .acces > .item2 > .item2_img {
+    width: 121px;
+    height: 110px;
+    background: url("../../images/320px6.png") no-repeat center center/cover;
+  }
+  .App > .body > .acces > .item2 > .item2_img > .circle {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: all 0.75s;
+  }
+  .App > .body > .acces > .item2 > .item2_img > .circle > .fa-plus {
+    color: white;
+  }
+  .App > .body > .acces > .item2 > p {
+    width: 100px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+    margin: 0;
+  }
+  .App > .body > .acces > .item2 > h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 10px;
+    color: #ADACAC;
+  }
+  .App > .body > .acces > .item2:hover .circle {
+    background-color: red;
+  }
+  .App > .body > .acces > .email_info {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .App > .body > .acces > .email_info > p {
+    font-family: "Jura";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+  }
+  .App > .body > .acces > .email_info > input {
+    width: 276px;
+    height: 59px;
+    background: #272727;
+    border-radius: 6px;
+    border: none;
+    padding: 20px 26px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-top: 15px;
+    outline: none;
+  }
+  .App > .body > .acces:nth-child(9) > .acces_info > h3 {
+    width: 142px;
+  }
+  .App > .body > .acces:nth-child(9) > .item2 > .item2_img {
+    background: url("../../images/320px7.png") no-repeat center center/cover;
+  }
+  .App > .footer > .footer_nav {
+    padding: 40px 15px 30px 15px;
+  }
+  .App > .footer > .footer_nav > .footer_nav_left {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .App > .footer > .footer_nav > .footer_nav_left > h1 {
+    font-size: 20px;
+    margin: 0;
+    align-self: center;
+  }
+  .App > .footer > .footer_nav > .footer_nav_left > h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 12px;
+  }
+  .App > .footer > .footer_nav > .footer_nav_left > p {
+    font-size: 11px;
+    line-height: 20px;
+    color: #ADACAC;
+    margin-top: 20px;
+  }
+  .App > .footer > .footer_nav > .footer_nav_center > .footer_center_top > ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .App > .footer > .footer_nav > .footer_nav_center > .footer_center_top > ul > li {
+    margin: 5px 5px;
+  }
+  .App > .footer > .footer_nav > .footer_nav_center > .footer_center_top > ul > li > a {
+    padding: 0 5px;
+  }
+  .App > .footer > .footer_nav > .footer_nav_center > .footer_center_center > ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .App > .footer > .footer_nav > .footer_nav_center > .footer_center_center > ul > li {
+    margin: 5px;
+  }
+  .App > .footer > .footer_nav > .footer_nav_center > .footer_center_center > ul > li > a {
+    padding: 0 5px;
+  }
+  .App > .footer > .footer_nav > .footer_nav_center > .footer_center_bottom > p {
+    width: 100%;
+  }
+  .App > .footer > .footer_nav > .footer_nav_center > .footer_center_bottom > ul {
+    padding: 0;
+    margin-left: -15px;
+  }
+  .App > .footer > .footer_nav > .footer_nav_center > .footer_center_bottom > ul > li {
+    margin-left: 15px;
+  }
 }/*# sourceMappingURL=Responsive.css.map */

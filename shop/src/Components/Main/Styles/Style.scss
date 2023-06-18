@@ -90,6 +90,12 @@ $border: 1px solid red;
                                     &>.offcanvas-header{
                                         padding: 45px 0 35px 0;
 
+                                        &>.right{
+                                            &>.mobile{
+                                                display: none;
+                                            }
+                                        }
+
                                         &>.fa-angle-left{
                                             font-size: 20px;
                                         }
@@ -147,6 +153,9 @@ $border: 1px solid red;
                     }
 
                     &>.phone{
+                        display: none;
+                    }
+                    &>.bag{
                         display: none;
                     }
                     &>li:nth-child(2) {
@@ -834,6 +843,13 @@ $border: 1px solid red;
         
         }
 
+        &>.phone{
+            display: none;
+        }
+        &>.acces{
+            display: none;
+        }
+
     }
 
     &>.footer{
@@ -866,7 +882,8 @@ $border: 1px solid red;
                 }
     
                 &>h2{
-                    width: 160px;
+                    max-width: 160px;
+                    width: 1001%;
                     font-family: 'Montserrat';
                     font-style: normal;
                     font-weight: 600;

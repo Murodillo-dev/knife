@@ -69,6 +69,9 @@
 .App > .header > .header_nav > ul > .header_nav_left > li > a > .menu > .offcanvas > .offcanvas-header {
   padding: 45px 0 35px 0;
 }
+.App > .header > .header_nav > ul > .header_nav_left > li > a > .menu > .offcanvas > .offcanvas-header > .right > .mobile {
+  display: none;
+}
 .App > .header > .header_nav > ul > .header_nav_left > li > a > .menu > .offcanvas > .offcanvas-header > .fa-angle-left {
   font-size: 20px;
 }
@@ -113,6 +116,9 @@
   font-size: 17px;
 }
 .App > .header > .header_nav > ul > .header_nav_left > .phone {
+  display: none;
+}
+.App > .header > .header_nav > ul > .header_nav_left > .bag {
   display: none;
 }
 .App > .header > .header_nav > ul > .header_nav_left > li:nth-child(2) {
@@ -709,6 +715,12 @@
   line-height: 24px;
   color: #FFFFFF;
 }
+.App > .body > .phone {
+  display: none;
+}
+.App > .body > .acces {
+  display: none;
+}
 .App > .footer > .footer_nav {
   width: 100%;
   height: auto;
@@ -736,7 +748,8 @@
   color: black;
 }
 .App > .footer > .footer_nav > .footer_nav_left > h2 {
-  width: 160px;
+  max-width: 160px;
+  width: 1001%;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;

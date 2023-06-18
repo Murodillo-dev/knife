@@ -3,8 +3,8 @@ import '../Styles/Responsive.css'
 import React, { useRef, useState, Component } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+// import "swiper/css/pagination";
+// import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
@@ -29,7 +29,13 @@ const Header = () => {
 
                   <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExample">
                     <div class="offcanvas-header">
-                    <i class="fa-sharp fa-solid fa-angle-left"></i>
+                      <div className="left">
+                    <i class="fa-sharp fa-solid fa-angle-left "></i>
+                      </div>
+                      <div className="right">
+                    <i class="fa-solid fa-envelope mobile"></i>
+                    <i class="fa-solid fa-search mobile"></i>
+                      </div>
                     </div>
                     <div class="offcanvas-body">
                         <ul>
@@ -109,9 +115,14 @@ const Header = () => {
               </a>
             </li>
 
-            <li>
+            <li className='location'>
               <a href="#">
                 <i class="fa-sharp fa-solid fa-location-dot"></i>
+              </a>
+            </li>
+            <li className='bag'>
+              <a href="#">
+              <i class="fa-solid fa-bag-shopping"></i>
               </a>
             </li>
 
@@ -120,6 +131,7 @@ const Header = () => {
               8 981 120-11-17
               </a>
             </li>
+
             <li className='phone'>
               <a href="#">
               <i class="fa-solid fa-phone"></i>

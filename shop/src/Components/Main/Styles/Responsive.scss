@@ -300,13 +300,13 @@ $border: 1px solid red;
                     }
                 }
             }
-            &>.body_knife{
-                &>.body_knife_cards{
-                    &>.body_knife_cards_img{
-                        // padding: 0 50px;
-                    }
-                }
-            }
+            // &>.body_knife{
+            //     &>.body_knife_cards{
+            //         &>.body_knife_cards_img{
+            //             // padding: 0 50px;
+            //         }
+            //     }
+            // }
             &>.town{
                 &>.town_top{
                     @include beetwen();
@@ -494,6 +494,475 @@ $border: 1px solid red;
                 &>.footer_nav_right{
                     padding-right: 100px;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .App{
+        max-width: 400px;
+        width: 100%;
+        &>.header{
+            &>.header_nav{
+                padding: 12px 15px;
+                &>ul{
+                    &>.header_nav_left{
+                        &>.location{
+                            display: none;
+                        }
+                        &>.bag{
+                            display: block;
+                            margin: 0 25px;
+                        }
+                        &>li{
+                            &>a{
+                                &>.menu{
+                                    &>.offcanvas{
+                                        padding: 0 0 0 25px ;
+                                        max-width: 400px;
+                                        width: 100%;
+                                        &>.offcanvas-header{
+                                            padding: 35px 25px 25px 0;
+                                            &>.right{
+                                                @include start();
+                                                &>.mobile{
+                                                    display: block;
+                                                    margin-left: 35px;
+                                                }
+                                            }
+                                        }
+                                        &>.offcanvas-body{
+                                            &>ul{
+                                                &>li{
+                                                    &>a{
+                                                        font-family: 'Montserrat';
+                                                        font-style: normal;
+                                                        font-weight: 400;
+                                                        font-size: 16px;
+                                                        line-height: 20px;
+                                                        color: #FFFFFF;
+                                                        flex: none;
+                                                        order: 0;
+                                                        flex-grow: 0;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &>.header_nav_center{
+                        &>li{
+                            &>a{
+                                &>p{
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+
+                    &>.header_nav_right{
+                        display: none;
+                    }
+                }
+            }
+
+            &>.header_info{
+                margin-top: 52px;
+                padding: 15px;
+
+                &>h1{
+                    max-width: 290px;
+                    width: 100%;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+                &>p{
+                    max-width: 215px;
+                    width: 100%;
+                    margin-top: 15px;
+                    font-size: 14px;
+                    line-height: 140%;
+                }
+                &>button{
+                    margin-top: 10px;
+                }
+            }
+        }
+        &>.body{
+            background: #272727;
+            &>.body_icons{
+                display: none;
+            }
+            &>.body_knife{
+                display: none;
+            }
+            &>.email{
+                display: none;
+            }
+            &>.new{
+                display: none;
+            }
+            &>.town{
+                display: none;
+            }
+            &>.all{
+                display: none;
+            }
+            &>.item{
+                display: none   ;
+            }
+            &>.phone{
+                display: block;
+                padding:  0 15px;
+                background: #272727;
+                &>.phone_knife{
+                    @include center();
+                    &>.phone_knife_top{
+                        max-width: 290px;
+                        width: 100%;
+                        height: 290px;
+                        background: url('../../images/320px1.png') no-repeat center center / cover;
+                    }
+                    &>h1{
+                        max-width: 290px;
+                        width: 100%;
+                        font-family: 'Jura';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #FFFFFF;
+                        margin-top: 20px;
+                    }
+                    &>p{
+                        max-width: 290px;
+                        width: 100%;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: #FFFFFF;
+                    }
+                    &>.phone_knife_top:nth-child(4){
+                        margin-top: 70px;
+                        background: url('../../images/320px2.png') no-repeat center center / cover;
+                    }
+                }
+                &>.phone_slide{
+                    padding: 35px 0;
+                    background: #272727;
+                    
+                    &>.swiper{
+                        
+                        &>.swiper-wrapper{
+                                
+                            &>.swiper-slide{
+                                width: 100%;
+                                height: 165px;
+                                background-color: red;
+                                border-radius: 15px;
+                                background: url('../../images/320px3.png') no-repeat center center / cover;
+                            }
+                        }
+                       
+                    }
+
+                    &>.phone_video{
+                        margin-top: 30px;
+                        width: 100%;
+                        height: 170px;
+                        // border: $border;
+                        overflow: hidden;
+                        border-radius: 15px;
+                        position: relative;
+                        // @include center();
+            
+                        &>.mp4{
+                            min-width: 100%;
+                            min-height: 100%;
+                        }
+                        &>button{
+                            &>.fa-circle-play{
+                                font-size: 50px;
+                                color: red;
+                                position: absolute;
+                                z-index: 2;
+                                top: 60px;
+                                left: 160px;
+                            }
+                        }
+                    }
+                }
+                &>.phone_info{
+                    padding-bottom: 35px;
+                    @include center();
+
+                    &>h1{
+                        font-family: 'Jura';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #FFFFFF;
+                        text-align: center;
+                    }
+                    &>h1:hover{
+                        border-bottom: 2px solid red;
+                    }
+                    &>.phone_info_img{
+                        border-radius: 15px;
+                        margin-top: 30px;
+                        width: 250px;
+                        height: 350px;
+                        margin-bottom: 15px;
+                        background: url('../../images/320px5.png')no-repeat center center / cover;
+                    }
+
+                    &>.phone_info_props{
+                        border-bottom: 1px solid #4F4F4F;
+                        width: 100%;
+                        @include beetwen();
+                        margin-top: 15px;
+                        &>p{
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 140%;
+                            color: #FFFFFF;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    &>.phone_info_props2{
+                        @include start();
+                        margin-top: 20px;
+                        align-items: center;
+
+                        &>button{
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 200;
+                            font-size: 35px;
+                            line-height:  17px;
+                            text-transform: uppercase;
+                            color: #ADACAC;
+                            background-color: transparent;
+                            border: none;
+                        }
+                        &>h2{
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 17px;
+                            text-transform: uppercase;
+                            color: #ADACAC;
+                            margin-left: 20px;
+                            margin-bottom: 0;
+                        }
+                    }
+                
+                }
+                }
+                &>.acces{
+                    background: #373737;
+                    padding: 60px 15px 20px 15px;
+                    @include beetwen();
+                    &>.acces_info{
+                        width: 100%;
+                        // border: $border;
+                        &>h3{
+                            width: 133px;
+                            font-family: 'Jura';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: #FFFFFF;
+                            margin: 0 ;
+                            border-bottom: 2px solid red;
+                        }
+                    }
+
+                    &>.item2{
+                        width: 140px;
+                        height: 190px;
+                        border-radius: 15px;
+                        padding: 15px 10px;
+                        position: relative;
+                        margin-top: 30px;
+                        background: #272727;
+                        &>.item2_img{
+                            width: 121px;
+                            height: 110px;
+                            background: url('../../images/320px6.png') no-repeat center center / cover;
+                            
+                            &>.circle{
+                                width: 25px;
+                                height: 25px;
+                                position: absolute;
+                                top: 15px;
+                                right: 10px;
+                                border-radius: 50%;
+                                // border: $border;
+                                @include center();
+                                align-items: center;
+                                transition: all 0.75s;
+                                &>.fa-plus{
+                                    color: white;
+                                }
+                            }
+                            
+                            
+                        }
+                        &>p{
+                            width: 100px;
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 11px;
+                            line-height: 13px;
+                            color: #FFFFFF;
+                            margin: 0;
+                        }
+                        &>h2{
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 17px;
+                            margin-top: 10px;
+                            color: #ADACAC;
+                        }
+                    }
+                    &>.item2:hover .circle{
+                        background-color: red;
+                    }
+                    &>.email_info{
+                        text-align: center;
+                        margin-top: 30px;
+        
+                        &>p{
+                            font-family: 'Jura';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: #FFFFFF;
+                        }
+        
+                        &>input{
+                            width: 276px;
+                            height: 59px;
+                            background: #272727;
+                            border-radius: 6px;
+                            border: none;
+                            padding: 20px 26px;
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 140%;
+                            color: #FFFFFF;
+                            opacity: 0.5;
+                            margin-top: 15px;
+                            outline: none;
+                        }
+                    }
+                }
+                &>.acces:nth-child(9){
+                    &>.acces_info{
+                        &>h3{
+                            width: 142px;
+                        }
+                    }
+                    &>.item2{
+                        &>.item2_img{
+                            background: url('../../images/320px7.png') no-repeat center center / cover;
+                        }
+                    }
+                }
+            
+        }
+        &>.footer{
+            &>.footer_nav{
+                // border: $border;
+                padding: 40px 15px 30px 15px;
+
+                &>.footer_nav_left{
+                    @include beetwen();
+                    // border: $border;
+                    &>h1{
+                        font-size: 20px;
+                        margin: 0;
+                        align-self: center;
+                    }
+                    &>h2{
+                        text-align: center;
+                        margin: 0;
+                        font-size: 12px;
+                    }
+                    &>p{
+                        font-size: 11px;
+                        line-height: 20px;
+                        color: #ADACAC;
+                        margin-top: 20px;
+                    }
+                }
+                &>.footer_nav_center{
+                    // border: $border;
+                    &>.footer_center_top{
+                        // border: $border;
+                        &>ul{
+                            @include start();
+                            padding: 0;
+                            // border: $border;
+                            &>li{
+                                margin: 5px 5px;
+                                &>a{
+                                    padding: 0 5px;
+                                    // border: $border;
+                                }
+                            }
+                        }
+                    }
+                    &>.footer_center_center{
+                        // border: $border;
+                        &>ul{
+                            @include start();
+                            padding: 0;
+                            // border: $border;
+                            &>li{
+                                margin: 5px;
+                                &>a{
+                                    // border: $border;
+                                    padding: 0 5px;
+                                }
+                            }
+                        }
+                    }
+                    &>.footer_center_bottom{
+                        &>p{
+                            // border: $border;
+                            width: 100%;    
+                        }
+                        &>ul{
+                            // border: $border;
+                            padding: 0;
+                            margin-left: -15px;
+                            &>li{
+                                margin-left:15px ;
+                            }
+                        }
+                    }
+                }
+            
             }
         }
     }
